@@ -2,7 +2,7 @@
 
 Docker image with only Flask uWSGI, to be used with a reverse proxy such as Traefik. No reverse proxy is included in the image.
 
-Currently Alpine Python 3.11 image. _If there is interest for a bigger matrix of tags or other publishing platforms, open an issue._
+Currently Alpine Python 3.11 image. _If there is interest for a bigger matrix of tags, distributions or other publishing platforms, open an issue._
 
 
 ## Setup
@@ -53,4 +53,4 @@ if __name__ == "__main__":
 
 #### Traefik
 
-Setup a rule, an entrypoint and any TLS configuration you require. Service port will be `8000` automatically as the only one exposed in the container
+Setup a rule, an entrypoint and any TLS configuration you require. Service port will be `8000` automatically as the only one exposed in the container.
