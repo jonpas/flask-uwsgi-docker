@@ -6,7 +6,7 @@ Docker image with only Flask uWSGI, to be used with a reverse proxy such as Trae
 ## Example
 
 `web/app.py`:
-```
+```py
 from flask import Flask
 from werkzeug.middleware.proxy_fix import ProxyFix
 
@@ -23,7 +23,7 @@ if __name__ == "__main__":
 ```
 
 `web/wsgi.py`:
-```
+```py
 from web import app
 
 if __name__ == "__main__":
