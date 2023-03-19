@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8000/tcp
 
 STOPSIGNAL SIGINT
-CMD ["uwsgi", "--http", "0.0.0.0:8000", "--master", "-p", "4", "-w", "wsgi:app"]
+CMD ["uwsgi", "--http", "0.0.0.0:8000", "--master", "-w", "wsgi:app"]
