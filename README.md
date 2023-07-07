@@ -4,6 +4,8 @@ Docker image with only Flask uWSGI, to be used with a reverse proxy such as Trae
 
 Currently Alpine Python 3.11 image. _If there is interest for a bigger matrix of tags, distributions or other publishing platforms, open an issue._
 
+[**Warning! uWSGI allocates memory by system's max fd size, which is often `1073741816`, resulting in high memory usage right out of the box! [Gunicorn image](https://github.com/jonpas/flask-gunicorn-docker) is instead recommended for Docker use.**](https://github.com/grafana/oncall/issues/1521#issuecomment-1476760374)
+
 
 ## Setup
 
